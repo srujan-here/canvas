@@ -1,0 +1,106 @@
+/* CanvasEditor.css */
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mb-4 {
+    margin-bottom: 16px;
+  }
+  
+  input[type="file"],
+  input[type="text"],
+  input[type="color"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"] {
+    height: 40px;
+  }
+  
+  .color-picker {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .color-swatch {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .color-swatch:hover {
+    transform: scale(1.2);
+  }
+  
+  .color-picker-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    margin-right: 8px;
+  }
+  
+  .color-picker-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .eyedropper-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .eyedropper-button:hover {
+    background-color: #218838;
+  }
+  
+  canvas {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
